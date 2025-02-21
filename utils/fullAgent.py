@@ -163,7 +163,7 @@ class TrainModel():
         if not isinstance(self._training_labels, torch.Tensor):
             self._training_labels = torch.tensor(self._training_labels, dtype=torch.float32)
 
-        current_alignment = self._loss_ta(_matrix, self._training_labels)
+        current_alignment = self._loss_function(_matrix, self._training_labels)
 
         # Convert to numpy for SVM
         _matrix = _matrix.detach().numpy()

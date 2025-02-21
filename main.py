@@ -17,7 +17,7 @@ import pandas as pd
 # Custom Libraries
 from utils.model import Qkernel
 from utils.data_generator import DataGenerator
-from utils.agent import TrainModel
+from utils.fullAgent import TrainModels
 
 # Backend Configuration
 if torch.backends.mps.is_available():
